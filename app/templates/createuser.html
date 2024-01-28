@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Paste Bin - Document</title>
+    <link rel="stylesheet" href="{{ url_for('mybp.static', filename='mystyle.css') }}">
+</head>
+<body>
+    <div class="container">
+        <form action="createuser" method="post">
+            <label name="username"><b>Username</b></label><br>
+            <input name="username" type="text" placeholder="Enter Username" class="textfield" value="{{ username }}" required><br>
+            <label for="password"><b>Password</b></label><br>
+            <input name="password" type="password" placeholder="Enter Password" class="textfield" required><br>
+            <br>
+            <button type="submit">Create User</button>
+        </form>
+    </div>
+        
+</body>
+</html>

@@ -1,0 +1,23 @@
+h1 {
+    color: rgb(1, 11, 168);   
+}
+
+body {
+    background-color: rgb(145, 204, 227);
+}
+
+button {
+    background-color: rgb(16, 135, 16);
+    color: white;
+    width: 1000px;
+    height: 50px;
+}
+
+.textfield{
+    width: 1000px;
+}
+
+textarea{
+    width: 1000px;
+    height: 200px;
+}

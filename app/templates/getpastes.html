@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Paste Bin - Get Paste</title>
+    <link rel="stylesheet" href="{{ url_for('mybp.static', filename='mystyle.css') }}">
+</head>
+<body>
+    <h1>{{ count_pastes }} Pastes by {{ username }}</h1>
+    {% for paste in pastes %}
+        {{ paste.title }}<br>
+        {{ paste.content }}<br>
+        <br>
+    {% endfor %}
+
+</body>
+</html>
